@@ -1,0 +1,22 @@
+{
+  "type": "module",
+  "private": true,
+  "workspaces": [
+    "server",
+    "client",
+    "e2e"
+  ],
+  "scripts": {
+    "build:client": "yarn workspace detailing-site-client build",
+    "dev": "yarn workspace detailing-site-server dev",
+    "dev:debug": "yarn workspace detailing-site-server dev:debug",
+    "heroku-postbuild": "yarn workspace detailing-site-client build",
+    "start": "yarn workspace detailing-site-server start",
+    "dev:cypress": "yarn workspace detailing-site-server dev:e2e",
+    "e2e:open": "yarn workspace detailing-site-e2e e2e:open",
+    "e2e:run": "yarn workspace detailing-site-e2e e2e:run"
+  },
+  "engines": {
+    "node": "^16.18"
+  }
+}
