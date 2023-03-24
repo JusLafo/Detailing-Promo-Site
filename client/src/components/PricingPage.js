@@ -4,6 +4,10 @@ const PricingPage = () => {
 
   return (
     <div>
+      <br/>
+      <a className="home-button" href="/">Home</a>
+      <br/>
+      <br/>
       <h5>Exterior Wash</h5>
       <h6>Price: $50 USD</h6>
         <ul>
