@@ -10,6 +10,7 @@ import TopBar from "./layout/TopBar";
 
 import LandingPage from "./LandingPage";
 import PricingPage from "./PricingPage";
+import ContactPage from "./ContactPage";
 
 const App = (props) => {
   const [currentUser, setCurrentUser] = useState(undefined);
@@ -29,10 +30,11 @@ const App = (props) => {
   return (
     <div className="home-page">
       <Router>
-        <TopBar user={currentUser} />
+        {/* <TopBar user={currentUser} /> */}
         <Switch>
           <Route exact path="/" component={LandingPage} />
           <Route exact path="/pricing" component={PricingPage} />
+          <Route exact path="/contact" component={ContactPage} />
           <Route exact path="/users/new" component={RegistrationForm} />
           <Route exact path="/user-sessions/new" component={SignInForm} />
         </Switch>
